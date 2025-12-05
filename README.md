@@ -5,22 +5,12 @@
 - 單人點餐流程的模擬，含 3 家店、各 2 道餐點，操作包含 shop list、order（含 confirm / cancel）。
 - **功能重點：** CLI 互動式選單、狀態管理（選店、選品、數量、確認／取消）、以 C + Makefile 結構化程式專案。
 
-## Hw2｜外送平台（多人連線版：單一外送員、一次一位客戶）
-
-- 把 Hw1 改成 socket server 版；同時間只服務一位客戶，支援 shop list、order 等協定互動（助教提供 client 檢測）。
-- **功能重點：** TCP socket 程式設計（Server 端）、封包格式與指令解析、阻塞式 I/O、正確回覆訊息（結尾換行等）。
-
-## Hw3｜外送平台（多人連線版：兩位外送員、可同時多客戶）
+## Hw2｜外送平台（多人連線版：兩位外送員、可同時多客戶）
 
 - 採 process 或 thread 改成多客戶 Concurrent，兩位外送員、FCFS 排隊，須避免 race condition；沿用 Hw2 指令並新增長等待的互動。
 - **功能重點：** 多程序／多執行緒 Concurrent、同步與共享狀態一致性、排程（FCFS）。
 
-## Lab 3-1｜學號跑馬燈（RPi）
-
-- 撰寫 kernel driver + user-space writer，在硬體上做學號的跑馬燈顯示（可控制方向與速度）。
-- **功能重點：** Linux kernel module、`/dev` 字元裝置、基本 I/O 控制。
-
-## Lab 3-2｜學號跑馬燈－七段顯示器（RPi）
+## Lab 3｜學號跑馬燈－七段顯示器（RPi）
 
 - 以 GPIO 驅動 7-seg，實作 driver + writer 呈現學號跑馬燈。
 - **功能重點：** GPIO 腳位控制、七段碼（segment／位掃）、ISR／時間節拍與顯示時序。
