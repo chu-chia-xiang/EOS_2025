@@ -1,0 +1,1 @@
+cmd_/home/stu/lab3/lab3_driver.ko := aarch64-linux-gnu-ld -r -EL  -maarch64elf -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/stu/lab3/lab3_driver.ko /home/stu/lab3/lab3_driver.o /home/stu/lab3/lab3_driver.mod.o;  true
